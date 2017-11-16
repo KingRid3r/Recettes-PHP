@@ -1,0 +1,1 @@
+{include file="../layout/layout_entete.inc.tpl"}
