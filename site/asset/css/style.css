@@ -1,0 +1,43 @@
+.non_souligne:hover
+{
+	text-decoration: underline;
+	color: white;
+}
+
+.non_souligne:active
+{
+	text-decoration: underline;
+	color: white;
+}
+
+.non_souligne:visited
+{
+	text-decoration: none;
+	color: white;
+}
+
+.rouge
+{
+	color: red;
+}
+
+body
+{
+background-image:url(background.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+.bouton
+{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+.copy
+{
+	position: absolute;
+	bottom: 10px;
+	left: 33%;
+}
