@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="../../../asset/css/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../../../asset/css/style.css">
-	<link rel="shortcut icon" href="puces.png">
+	<link rel="shortcut icon" href="../../../asset/images/puces.png">
 	<title>Recette Etudiante</title>
 	<meta name="author" content="Luca BENEZIT, Mathieu CHABRE" />
 	<meta name="description" content="Projet PHP, Recette Etudiante" />
