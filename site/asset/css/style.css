@@ -23,7 +23,8 @@
 
 body
 {
-background-image:url(background.jpg);
+background-color: red;
+background-image:url(.\asset\images\background.jpg);
 background-repeat:no-repeat;
 background-size:cover;
 }
