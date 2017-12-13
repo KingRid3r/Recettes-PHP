@@ -7,6 +7,7 @@
 	$smarty->debugging = true;
 	$smarty->caching = true;
 	$smarty->cache_lifetime = 120;
+	$smarty->assign('data', $data)
 	$smarty->display('application/views/modules/'.$_PAGE[$current_page].'.tpl')
 
 ?>
