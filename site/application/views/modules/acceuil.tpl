@@ -1,11 +1,13 @@
-{include file="../layout/layout_entete.inc.tpl"}
-<div class="container">
-		
-		{include file="../nav/nav.inc.tpl"}
-		
-		
-		<div>
-			<h2 style="color: black"><u><strong> Présentation : </h2></u></strong>
+{extends '../layout.tpl'}
+
+{block name="title"}
+Acceuil
+{/block}
+
+
+{block name="content"}
+<div>
+			<h2 style="color: black"><u><strong> Présentation : </strong></u></h2>
 			<h4 style="color: black"> Bonjour et bienvenue sur le site de Luca et Mathieu. <br/>
 				Nous avons créé ce site pour les nouveaux étudiants mais pas seulement pour les nouveaux.<br/>
 				En effet, grâce à ce site communautaire, vous pourrez consulter des recettes de cuisine faites pars d'autres personnes.<br/>
@@ -52,8 +54,4 @@
 		
 		
 		<a href="#top" class="bouton btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-up"></span></a>
-		{include file="../layout/layout_pied.inc.tpl"}
-	</div>
-
-</body>
-</html>
+{/block}

@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -17,8 +16,8 @@
 							<a class="dropdown-toggle" data-toggle="dropdown">Recettes<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="recettes.php">Entrée</a></li>
-								<li><a href="recettes.php #plat">Plat</a></li>
-								<li><a href="recettes.php #collapse3">Dessert</a></li>
+								<li><a href="recettes.php%20#plat">Plat</a></li>
+								<li><a href="recettes.php%20#collapse3">Dessert</a></li>
 							</ul>
 						</li>
 						<li><a href="contact.php">Contacts</a></li>
@@ -29,4 +28,4 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+</nav>
