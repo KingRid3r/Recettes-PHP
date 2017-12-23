@@ -34,14 +34,14 @@ Acceuil
 							<div class="col-sm-6 col-md-4">
 								<div class="thumbnail">
 									<h3 class="text-center">{$data.plat[0][0]}</h3>
-									<img class="caption" src="media/{$data.entree[0][2]}/{$data.plat[0][1]}" alt="image plat" style="height: 215px">
+									<img class="caption" src="media/{$data.plat[0][2]}/{$data.plat[0][1]}" alt="image plat" style="height: 215px">
 									<a class="btn btn-primary center-block" href="">GO !</a>
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-4">
 								<div class="thumbnail">
 									<h3 class="text-center">{$data.dessert[0][0]}</h3>
-									<img class="caption" src="media/{$data.entree[0][2]}/{$data.entree[0][1]}" alt="image dessert" style="height: 215px">
+									<img class="caption" src="media/{$data.dessert[0][2]}/{$data.dessert[0][1]}" alt="image dessert" style="height: 215px">
 									<a class="btn btn-primary center-block" href="">GO !</a>
 								</div>
 							</div>

@@ -21,7 +21,7 @@ try{
   $req->execute();
   $recette_plat = $req->fetchAll();
 
-  $req = $db->prepare('SELECT RCT_TITRE, RCT_ILLUSTRATION, UTI_ID FROM T_RECETTE_RCT WHERE RCT_ID = '.$recette_id_plat[0][0].' ORDER BY RAND()');
+  $req = $db->prepare('SELECT RCT_TITRE, RCT_ILLUSTRATION, UTI_ID FROM T_RECETTE_RCT WHERE RCT_ID = '.$recette_id_dessert[0][0].' ORDER BY RAND()');
   $req->execute();
   $recette_dessert = $req->fetchAll();
 

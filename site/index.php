@@ -5,9 +5,7 @@
 	include 'application/modules/'.$_PAGE[$current_page].'.inc.php';
 	$smarty = new Smarty;
 	$smarty->debugging = true;
-	$smarty->caching = true;
-	$smarty->cache_lifetime = 120;
+	$smarty->caching = false;
 	$smarty->assign('data', $data);
 	$smarty->display('application/views/modules/'.$_PAGE[$current_page].'.tpl',$data);
-
 ?>
