@@ -15,7 +15,7 @@ Acceuil
 				En bref, les membres de la commmunauté pourrons ajouter leurs recettes de cuisine qui seront ainsi visible par tout les visiteurs du site qui pourront se régaler à la maison ! </h4>
 		</div>
 		<br/>
-				
+
 		<div class="row">
 			<div class="col-sm-6 col-md-12">
 				<div class="panel-group" id="accordion_3">
@@ -47,11 +47,7 @@ Acceuil
 							</div>
 						</div>
     				</div>
-  				</div> 
+  				</div>
 			</div>
 		</div>
-
-		
-		
-		<a href="#top" class="bouton btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-up"></span></a>
 {/block}
