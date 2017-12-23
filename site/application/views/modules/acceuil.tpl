@@ -26,22 +26,22 @@ Acceuil
         				<div class="panel-body">
 							<div class="col-sm-6 col-md-4">
 								<div class="thumbnail">
-									<h3 class="text-center">Nom entrée</h3>
-									<img class="caption" src="entre1.jpg" alt="image entré" style="height: 215px">
+									<h3 class="text-center">{$data.entree[0][0]}</h3>
+									<img class="caption" src="media/{$data.entree[0][2]}/{$data.entree[0][1]}" alt="image entré" style="height: 215px">
 									<a class="btn btn-primary center-block" href="">GO !</a>
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-4">
 								<div class="thumbnail">
-									<h3 class="text-center">Nom plat</h3>
-									<img class="caption" src="plat1.jpg" alt="image plat" style="height: 215px">
+									<h3 class="text-center">{$data.plat[0][0]}</h3>
+									<img class="caption" src="media/{$data.entree[0][2]}/{$data.plat[0][1]}" alt="image plat" style="height: 215px">
 									<a class="btn btn-primary center-block" href="">GO !</a>
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-4">
 								<div class="thumbnail">
-									<h3 class="text-center">Nom dessert</h3>
-									<img class="caption" src="dessert1.jpg" alt="image dessert" style="height: 215px">
+									<h3 class="text-center">{$data.dessert[0][0]}</h3>
+									<img class="caption" src="media/{$data.entree[0][2]}/{$data.entree[0][1]}" alt="image dessert" style="height: 215px">
 									<a class="btn btn-primary center-block" href="">GO !</a>
 								</div>
 							</div>
