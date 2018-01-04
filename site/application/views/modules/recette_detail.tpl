@@ -1,7 +1,7 @@
 {extends '../layout.tpl'}
 
 {block name="title"}
-Recettes
+{$data.recette[1]}
 {/block}
 
 

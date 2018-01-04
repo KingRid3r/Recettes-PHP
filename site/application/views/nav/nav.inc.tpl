@@ -23,8 +23,8 @@
 						<li><a href="index.php?page=contacts">Contacts</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="inscription.php"><span class="glyphicon glyphicon-modal-window"></span> Inscription</a></li>
-						<li><a href="connexion.php"><span class="glyphicon glyphicon-user"></span> Connexion</a></li>
+						<li><a href="index.php?page=inscription"><span class="glyphicon glyphicon-modal-window"></span> Inscription</a></li>
+						<li><a href="index.php?page=connection"><span class="glyphicon glyphicon-user"></span> Connexion</a></li>
 					</ul>
 				</div>
 			</div>

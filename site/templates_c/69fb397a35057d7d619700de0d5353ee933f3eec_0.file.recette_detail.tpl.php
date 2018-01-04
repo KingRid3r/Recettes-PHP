@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-04 13:31:07
+/* Smarty version 3.1.30, created on 2018-01-04 13:46:24
   from "C:\xampp\htdocs\Recettes-PHP\site\application\views\modules\recette_detail.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a4e1e8bd5a0c5_61919873',
+  'unifunc' => 'content_5a4e2220615ac1_84143411',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '69fb397a35057d7d619700de0d5353ee933f3eec' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Recettes-PHP\\site\\application\\views\\modules\\recette_detail.tpl',
-      1 => 1515069042,
+      1 => 1515069973,
       2 => 'file',
     ),
   ),
@@ -21,38 +21,39 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../layout.tpl' => 1,
   ),
 ),false)) {
-function content_5a4e1e8bd5a0c5_61919873 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a4e2220615ac1_84143411 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_45755a4e1e8bd3e592_17015006', "title");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_307395a4e22205f9f00_25850078', "title");
 ?>
 
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_159165a4e1e8bd57037_08404700', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_67365a4e22206121e5_41506481', "content");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild();
 $_smarty_tpl->_subTemplateRender("file:../layout.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block "title"} */
-class Block_45755a4e1e8bd3e592_17015006 extends Smarty_Internal_Block
+class Block_307395a4e22205f9f00_25850078 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-Recettes
+<?php echo $_smarty_tpl->tpl_vars['data']->value['recette'][1];?>
+
 <?php
 }
 }
 /* {/block "title"} */
 /* {block "content"} */
-class Block_159165a4e1e8bd57037_08404700 extends Smarty_Internal_Block
+class Block_67365a4e22206121e5_41506481 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>

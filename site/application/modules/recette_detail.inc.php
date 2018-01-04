@@ -15,7 +15,6 @@ try{
   exit();
 }
 $exist = $recette[0][0];
-$exist = $recette[0][0];
 if (!$exist){
   header('Location: index.php?page=404');
   exit;
