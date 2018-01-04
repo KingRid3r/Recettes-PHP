@@ -8,13 +8,17 @@ Inscription
 {block name="content"}
 <div class="container">
   {if $data.reponse ne false}
-  <p class="alert alert-danger">{$data.reponse}</p>
+    {if $data.reponse eq "ok"}
+      <p class="alert alert-success">Compte créé avec succés</p>
+    {else}
+      <p class="alert alert-danger">{$data.reponse}</p>
+    {/if}
   {/if}
   <h2 style="text-align: center;">Inscription</h2>
   <br />
   <p class="center-block" style="text-align: justify; width: 75%">Inscrivez-vous ! Dès maintenant et en quelques clics, inscrivez-vous gratuitement pour pouvoir ajouter et commenter des recettes. Pour s'inscrire c'est très simple : il vous suffit de remplir le formulaire ci-dessous et de vous laisser guider. </p>
   <br />
-  <form class="form-horizontal" method="POST" id="formInscription" action="">
+  <form class="form-horizontal" method="POST" id="formInscription" action="" enctype="multipart/form-data">
     <div class="form-group">
       <label class="control-label col-sm-2" for="nom">Nom :</label>
           <div class="col-sm-4">
@@ -54,7 +58,7 @@ Inscription
       <div class="form-group">
         <label class="control-label col-sm-2" for="avatar">Avatar :</label>
         <div class="col-sm-4">
-          <input type="file" accept="image/*" class="form-control" id="avatar" name="avatar">
+          <input type="file" accept="image/*" class="form-control" id="avatar" name="avatar" required>
         </div>
       </div>
       <div class="form-group">
