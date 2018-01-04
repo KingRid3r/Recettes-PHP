@@ -17,7 +17,7 @@ if ($cat == true){
   $data["description"] = $nom[0][1];
 
   try{
-    $req = $db->prepare('SELECT UTI_LOGIN, RCT_ILLUSTRATION, RCT_TITRE, RCT_DESCRIPTION  FROM T_RECETTE_RCT R JOIN T_UTILISATEUR_UTI U ON R.UTI_ID = U.UTI_ID');
+    $req = $db->prepare('SELECT UTI_LOGIN, RCT_ILLUSTRATION, RCT_TITRE, RCT_DESCRIPTION, R.RCT_ID FROM T_RECETTE_RCT R JOIN T_UTILISATEUR_UTI U ON R.UTI_ID = U.UTI_ID JOIN TJ_CAT_RCT J ON R.RCT_ID = J.RCT_ID WHERE J.CAT_ID = '.$_REQUEST['idc'].'');
     $req->execute();
     $categorie = $req->fetchAll();
   }catch(Exeption $e){
@@ -30,7 +30,7 @@ if ($cat == true){
 }else{
 
     try{
-      $req = $db->prepare('SELECT CAT_LABEL, CAT_DESCRIPTION, CAT_ILLUSTRATION FROM T_CATEGORIE_CAT');
+      $req = $db->prepare('SELECT CAT_LABEL, CAT_DESCRIPTION, CAT_ILLUSTRATION, CAT_ID FROM T_CATEGORIE_CAT');
       $req->execute();
       $categories = $req->fetchAll();
     }catch(Exeption $e){
@@ -39,6 +39,6 @@ if ($cat == true){
       exit();
     }
     $data["categories"] = $categories;
-    $data["categorie"]["exist"] = false;
+    $data["exist"] = false;
 }
 ?>

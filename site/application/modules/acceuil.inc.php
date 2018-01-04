@@ -13,15 +13,15 @@ try{
   $req->execute();
   $recette_id_dessert = $req->fetchAll();
   echo $recette_id_entree[0][0];
-  $req = $db->prepare('SELECT RCT_TITRE, RCT_ILLUSTRATION, UTI_ID FROM T_RECETTE_RCT WHERE RCT_ID = '.$recette_id_entree[0][0].' ORDER BY RAND()');
+  $req = $db->prepare('SELECT RCT_TITRE, RCT_ILLUSTRATION, UTI_ID, RCT_ID FROM T_RECETTE_RCT WHERE RCT_ID = '.$recette_id_entree[0][0].' ORDER BY RAND()');
   $req->execute();
   $recette_entree = $req->fetchAll();
 
-  $req = $db->prepare('SELECT RCT_TITRE, RCT_ILLUSTRATION, UTI_ID FROM T_RECETTE_RCT WHERE RCT_ID = '.$recette_id_plat[0][0].' ORDER BY RAND()');
+  $req = $db->prepare('SELECT RCT_TITRE, RCT_ILLUSTRATION, UTI_ID, RCT_ID FROM T_RECETTE_RCT WHERE RCT_ID = '.$recette_id_plat[0][0].' ORDER BY RAND()');
   $req->execute();
   $recette_plat = $req->fetchAll();
 
-  $req = $db->prepare('SELECT RCT_TITRE, RCT_ILLUSTRATION, UTI_ID FROM T_RECETTE_RCT WHERE RCT_ID = '.$recette_id_dessert[0][0].' ORDER BY RAND()');
+  $req = $db->prepare('SELECT RCT_TITRE, RCT_ILLUSTRATION, UTI_ID, RCT_ID FROM T_RECETTE_RCT WHERE RCT_ID = '.$recette_id_dessert[0][0].' ORDER BY RAND()');
   $req->execute();
   $recette_dessert = $req->fetchAll();
 

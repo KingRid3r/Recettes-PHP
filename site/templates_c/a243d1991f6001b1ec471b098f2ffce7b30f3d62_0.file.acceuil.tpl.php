@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-12-27 15:35:36
+/* Smarty version 3.1.30, created on 2018-01-04 13:34:32
   from "C:\xampp\htdocs\Recettes-PHP\site\application\views\modules\acceuil.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a43afb82d53d7_11517751',
+  'unifunc' => 'content_5a4e1f587ec442_14721694',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a243d1991f6001b1ec471b098f2ffce7b30f3d62' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Recettes-PHP\\site\\application\\views\\modules\\acceuil.tpl',
-      1 => 1514385217,
+      1 => 1515069269,
       2 => 'file',
     ),
   ),
@@ -21,27 +21,27 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../layout.tpl' => 1,
   ),
 ),false)) {
-function content_5a43afb82d53d7_11517751 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a4e1f587ec442_14721694 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_295135a43afb827da32_60625674', "title");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_37225a4e1f587bb2f8_43353748', "title");
 ?>
 
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11025a43afb82ca7e1_54752107', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_278995a4e1f587e80a6_35913453', "content");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild();
 $_smarty_tpl->_subTemplateRender("file:../layout.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block "title"} */
-class Block_295135a43afb827da32_60625674 extends Smarty_Internal_Block
+class Block_37225a4e1f587bb2f8_43353748 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -52,7 +52,7 @@ Acceuil
 }
 /* {/block "title"} */
 /* {block "content"} */
-class Block_11025a43afb82ca7e1_54752107 extends Smarty_Internal_Block
+class Block_278995a4e1f587e80a6_35913453 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -82,7 +82,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 									<img class="caption" src="media/<?php echo $_smarty_tpl->tpl_vars['data']->value['entree'][0][2];?>
 /<?php echo $_smarty_tpl->tpl_vars['data']->value['entree'][0][1];?>
 " alt="image entré" style="height: 215px">
-									<a class="btn btn-primary center-block" href="">GO !</a>
+									<a class="btn btn-primary center-block" href="index.php?page=detail&idr=<?php echo $_smarty_tpl->tpl_vars['data']->value['entree'][0][3];?>
+">GO !</a>
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-4">
@@ -92,7 +93,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 									<img class="caption" src="media/<?php echo $_smarty_tpl->tpl_vars['data']->value['plat'][0][2];?>
 /<?php echo $_smarty_tpl->tpl_vars['data']->value['plat'][0][1];?>
 " alt="image plat" style="height: 215px">
-									<a class="btn btn-primary center-block" href="">GO !</a>
+									<a class="btn btn-primary center-block" href="index.php?page=detail&idr=<?php echo $_smarty_tpl->tpl_vars['data']->value['plat'][0][3];?>
+">GO !</a>
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-4">
@@ -102,7 +104,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 									<img class="caption" src="media/<?php echo $_smarty_tpl->tpl_vars['data']->value['dessert'][0][2];?>
 /<?php echo $_smarty_tpl->tpl_vars['data']->value['dessert'][0][1];?>
 " alt="image dessert" style="height: 215px">
-									<a class="btn btn-primary center-block" href="">GO !</a>
+									<a class="btn btn-primary center-block" href="index.php?page=detail&idr=<?php echo $_smarty_tpl->tpl_vars['data']->value['dessert'][0][3];?>
+">GO !</a>
 								</div>
 							</div>
 						</div>

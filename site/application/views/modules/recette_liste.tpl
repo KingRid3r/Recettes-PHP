@@ -21,11 +21,11 @@ Recettes
                   {foreach from=$data.categorie item=cat}
                   <div class="panel panel-default">
                       <div class="panel-heading" style="background-color: #76B900">
-                        <a class="non_souligne" data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="text-align: center; color: white"><h3>{{$cat[2]}}</h3></a>
+                        <a class="non_souligne" data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="text-align: center; color: white"><h3>{$cat[2]}</h3></a>
                       </div>
                       <div id="collapse1" class="panel-collapse collapse in">
                         <div class="panel-body">
-                        <img class="caption" src="media/{$cat[0]}/{$cat[1]}" alt="image cat" style="height: 215px">{$cat[3]}</div>
+                        <img class="caption" src="media/{$cat[0]}/{$cat[1]}" alt="image cat" style="height: 215px">{$cat[3]} <a href="index.php?page=detail&idr={$cat[4]}">Accéder à la Recette</a></div>
                       </div>
                   </div>
                   {/foreach}
@@ -52,11 +52,11 @@ Recettes
                   {foreach from=$data.categories item=cat}
                   <div class="panel panel-default">
                       <div class="panel-heading" style="background-color: #76B900">
-                        <a class="non_souligne" data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="text-align: center; color: white"><h3>{{$cat[0]}}</h3></a>
+                        <a class="non_souligne" data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="text-align: center; color: white"><h3>{$cat[0]}</h3></a>
                       </div>
                       <div id="collapse1" class="panel-collapse collapse in">
                         <div class="panel-body">
-                        <img class="caption" src="media/categories/{$cat[2]}" alt="image cat" style="height: 215px">{$cat[1]}</div>
+                        <img class="caption" src="media/categories/{$cat[2]}" alt="image cat" style="height: 215px">{$cat[1]} <a href="index.php?page=recettes&idc={$cat[3]}">Accéder à la catégorie</a></div>
                       </div>
                   </div>
                   {/foreach}

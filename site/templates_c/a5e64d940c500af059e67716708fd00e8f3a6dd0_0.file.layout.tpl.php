@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-12-27 15:35:36
+/* Smarty version 3.1.30, created on 2018-01-03 22:09:51
   from "C:\xampp\htdocs\Recettes-PHP\site\application\views\layout.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a43afb835d438_58653058',
+  'unifunc' => 'content_5a4d469f414e97_75041240',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a5e64d940c500af059e67716708fd00e8f3a6dd0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Recettes-PHP\\site\\application\\views\\layout.tpl',
-      1 => 1514385217,
+      1 => 1515013787,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:application/views/layout/layout_pied.inc.tpl' => 1,
   ),
 ),false)) {
-function content_5a43afb835d438_58653058 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a4d469f414e97_75041240 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -36,7 +36,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 		<link rel="stylesheet" type="text/css" href="asset/css/style.css">
 		<link rel="shortcut icon" href="asset/images/puces.png">
 		<title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_180445a43afb833d651_75247355', "title");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_30355a4d469f40a2f2_59404562', "title");
 ?>
 </title>
 		<meta name="author" content="Luca BENEZIT, Mathieu CHABRE" />
@@ -62,10 +62,9 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_180445a43afb833d65
 ?>
 
 			<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_314935a43afb83537b5_81246551', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_303285a4d469f4122f1_37213805', "content");
 ?>
 
-			}
 		</div>
 		<footer>
 			<?php $_smarty_tpl->_subTemplateRender("file:application/views/layout/layout_pied.inc.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -74,10 +73,11 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_314935a43afb83537b
 		</footer>
 	</body>
 
-	
-</html><?php }
+
+</html>
+<?php }
 /* {block "title"} */
-class Block_180445a43afb833d651_75247355 extends Smarty_Internal_Block
+class Block_30355a4d469f40a2f2_59404562 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -86,7 +86,7 @@ Recette étudiante<?php
 }
 /* {/block "title"} */
 /* {block "content"} */
-class Block_314935a43afb83537b5_81246551 extends Smarty_Internal_Block
+class Block_303285a4d469f4122f1_37213805 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>

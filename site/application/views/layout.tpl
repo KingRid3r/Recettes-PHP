@@ -22,12 +22,11 @@
 		<div class="container">
 			{include file='application/views/nav/nav.inc.tpl'}
 			{block "content"}Erreur{/block}
-			}
 		</div>
 		<footer>
 			{include file='application/views/layout/layout_pied.inc.tpl'}
 		</footer>
 	</body>
 
-	
+
 </html>
