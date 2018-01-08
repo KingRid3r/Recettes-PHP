@@ -6,5 +6,5 @@ Erreur 404
 
 
 {block name="content"}
-<p> Erreur 404<p>
+<img id="erreur_404" class="center-block img-responsive texte-center" style="center" src="asset/images/er404.jpg" alt="erreur 404" />
 {/block}

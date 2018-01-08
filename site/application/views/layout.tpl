@@ -20,7 +20,11 @@
 			{include file='application/views/layout/layout_entete.inc.tpl'}
 		</header>
 		<div class="container">
-			{include file='application/views/nav/nav.inc.tpl'}
+			{if isset($smarty.session.MonID)}
+				{include file='application/views/nav/nav_membre.inc.tpl'}
+			{else}
+				{include file='application/views/nav/nav.inc.tpl'}
+			{/if}
 			{block "content"}Erreur{/block}
 		</div>
 		<footer>

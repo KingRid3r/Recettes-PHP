@@ -43,11 +43,11 @@
 					</ul>
 				</div>
 			</div>
-		</nav>		
+		</nav>
 	</div>
-	
-	
-	
+
+
+
 	<div class="col-sm-2" id="mySidebar">     
 		<div class="row">
 			<nav class="nav-sidebar sidebar">
@@ -59,9 +59,9 @@
 			</nav>
 		</div>
 	</div>
-	
-	
-	
+
+
+
 	<div class="container" id="infos_persos">
 		<h2 style="text-align: center;">Informations personnelles</h2>
 		<br/>
@@ -70,13 +70,13 @@
 		<form class="form-horizontal" style="text-align: justify; width: 100%">
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="nom">Nom :</label>
-      			<div class="col-sm-4">          
+      			<div class="col-sm-4">
         			<input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
     			</div>
     		</div>
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="prenom">Prénom :</label>
-      			<div class="col-sm-4">          
+      			<div class="col-sm-4">
         			<input type="text" class="form-control" id="prenom" placeholder="Entrez votre prenom">
     			</div>
     		</div>
@@ -88,7 +88,7 @@
     		</div>
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="login">Login :</label>
-      			<div class="col-sm-4">          
+      			<div class="col-sm-4">
         			<input type="text" class="form-control" id="login" placeholder="Entrez votre login">
     			</div>
     		</div>
@@ -110,7 +110,7 @@
     				<input type="file" accept="image/*" class="form-control" id="avatar">
     			</div>
     		</div>
-    		<div class="form-group">        
+    		<div class="form-group">
       			<div class="col-sm-offset-2 col-sm-10" style="width: 10%">
         			<button type="submit" class="btn btn-primary">Modifier</button>
       			</div>
@@ -118,12 +118,12 @@
   		</form>
 	</div>
 
-		
+
 
 	<a href="#top" class="bouton btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-up"></span></a>
 	<footer>
  		<p class="text-center">&copy; Copyright 2017 Luca BENEZIT, Mathieu CHABRE - Tous droits réservés</p>
  	</footer>
-	
+
 </body>
 </html>

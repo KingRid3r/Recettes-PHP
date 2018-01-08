@@ -23,10 +23,9 @@
 
 body
 {
-background-color: red;
-background-image:url(../images/background.jpg);
-background-repeat:no-repeat;
-background-size:cover;
+	background-image:url(background.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
 }
 
 .bouton
@@ -39,6 +38,54 @@ background-size:cover;
 .copy
 {
 	position: absolute;
-	bottom: 10px;
-	left: 33%;
+	bottom: 0;
+	left: 37.5%;
+}
+
+#mySidebar
+{
+	margin-top: 1%;
+	margin-left: 1.5%;
+	background-color: #202020;
+	border-radius: 10px;
+}
+
+.sidebar a
+{
+	color: #908d88;
+}
+
+.sidebar ul li a:hover
+{
+	color: white;
+	background: #202020;
+	border-radius: 10px;
+}
+
+.sidebar ul li.active a
+{ 
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+}
+
+#btn_ajt
+{
+	margin-left: 6%;
+}
+
+#tbl_mod
+{
+	margin-left: 6%;
+	width: 60%;
+}
+
+#tbl_mod td, #tbl_mod th
+{
+	border: 1px solid black ;
+}
+
+#infos_persos
+{
+	margin-left: 10%;
 }

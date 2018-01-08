@@ -24,6 +24,7 @@
             <h4><u><strong> Temps de Préparation :</strong></u> {$data.recette[4]} environ </h4>
             <h4><u><strong> Temps de Cuisson :</strong></u> {$data.recette[5]} </h4>
             <h4><u><strong> Temps de Repos :</strong></u> {$data.recette[6]} </h4>
+            <h4><u><strong> Note :</strong></u> <img class="caption" src="asset/images/note{$data.note}.jpg" alt="note"></h4>
           </div>
           <div class="col-sm-6 col-md-12">
             <br/>
@@ -44,10 +45,7 @@
             <br/>
             <h4><u><strong> Recette : </strong></u></h4>
             <p>
-              Adolescebat autem obstinatum propositum erga haec et similia multa scrutanda,
-              stimulos admovente regina, quae abrupte mariti fortunas trudebat in exitium praeceps,
-              cum eum potius lenitate feminea ad veritatis humanitatisque viam reducere utilia suadendo deberet,
-              ut in Gordianorum actibus factitasse Maximini truculenti illius imperatoris rettulimus coniugem.
+              {$data.recette[11]}
             </p>
           </div>
         </div>
@@ -63,16 +61,52 @@
   <div class="col-sm-6 col-md-12">
     <div class="panel-group" id="accordion_3">
       <div class="panel panel-default">
-            <div class="panel-heading" style="background-color: black">
-                <h2 style="text-align: center; color: white">Espace Commentaire</h2>
+        <div class="panel-heading" style="background-color: black">
+          <h2 style="text-align: center; color: white">Espace Commentaire</h2>
+        </div>
+
+        {foreach from=$data.coms item=com}
+          <div class="panel-body">
+            <div class="col-sm-6 col-md-2">
+              <p> Le {$com[1]}, par {$com[2]} </p>
+              <a><img style="width: 70%; margin-left: 22px" src="media/{$com[2]}/{$com[3]}" alt="avatar"></a>
             </div>
-        <div>
-          <br/>
-          <h1 style="text-align: center"> ICI C'EST LES COMMENTAIRES !!! </h1>
-          <br/>
+            <div class="col-sm-6 col-md-10">
+              <br/>
+              <br/>
+              <br/>
+              <p>
+                {$com[0]}
+              </p>
+              <br/>
+            </div>
+            <div class="col-sm-6 col-md-12">
+              <a><img style="margin-left: 22px" src="asset/images/sep.png" alt="separation"></a>
+            </div>
+          </div>
+        {/foreach}
+        {if isset($smarty.session.MonID)}
+
+
+        <div class="panel-body">
+          <div class="col-sm-12" style="text-align: center">
+            <form class="form-horizontal" method="POST" id="formConnection" action="">
+              <textarea spellcheck="true" class="form-control" id="commentaire" name="commentaire" rows="4" placeholder="Commentaire"></textarea>
+              <br/>
+              <div class="col-sm-4">
+                <input type="number" class="form-control" id="note" name="note" placeholder="Entrez une note sur 5" max="5">
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary"style="width: 25%"><h4>Ajouter un commentaire</h4></button>
+              </div>
+            </form>
+          </div>
         </div>
-        </div>
+        {/if}
+
+
       </div>
+    </div>
   </div>
 </div>
 {/block}

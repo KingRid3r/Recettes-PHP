@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-04 13:34:32
+/* Smarty version 3.1.30, created on 2018-01-08 00:58:31
   from "C:\xampp\htdocs\Recettes-PHP\site\application\views\modules\acceuil.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a4e1f587ec442_14721694',
+  'unifunc' => 'content_5a52b427f00e85_57015796',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a243d1991f6001b1ec471b098f2ffce7b30f3d62' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Recettes-PHP\\site\\application\\views\\modules\\acceuil.tpl',
-      1 => 1515069269,
+      1 => 1515369243,
       2 => 'file',
     ),
   ),
@@ -21,27 +21,27 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../layout.tpl' => 1,
   ),
 ),false)) {
-function content_5a4e1f587ec442_14721694 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a52b427f00e85_57015796 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_37225a4e1f587bb2f8_43353748', "title");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_226005a52b427e76839_87640248', "title");
 ?>
 
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_278995a4e1f587e80a6_35913453', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_140495a52b427ef8289_97881771', "content");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild();
 $_smarty_tpl->_subTemplateRender("file:../layout.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block "title"} */
-class Block_37225a4e1f587bb2f8_43353748 extends Smarty_Internal_Block
+class Block_226005a52b427e76839_87640248 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -52,7 +52,7 @@ Acceuil
 }
 /* {/block "title"} */
 /* {block "content"} */
-class Block_278995a4e1f587e80a6_35913453 extends Smarty_Internal_Block
+class Block_140495a52b427ef8289_97881771 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
